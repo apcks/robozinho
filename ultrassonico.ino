@@ -39,12 +39,12 @@ duracao = pulseIn(echoPino,HIGH);
 distancia = duracao/58;
 	
 	if(distancia < 10){
-	    ServoD.write(90);
+	    	ServoD.write(90);
 		ServoE.write(90);
 		delay(1000);// Robô para
 
 	} else {
-	    ServoD.write(0);
+	    	ServoD.write(0);
 		ServoE.write(180);
 		delay(1000);// Robô anda
 	}
